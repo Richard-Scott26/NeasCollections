@@ -1,0 +1,7 @@
+{
+  "name": "NeasCollections",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
