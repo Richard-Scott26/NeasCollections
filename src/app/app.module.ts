@@ -6,7 +6,6 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SharedModules } from './Shared/Shared.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { SharedModules } from './Shared/Shared.module';
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    SharedModules
   ],
   providers: [
     { 

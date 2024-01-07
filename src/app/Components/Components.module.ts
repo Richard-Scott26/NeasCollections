@@ -6,6 +6,9 @@ import { GalleryCardComponent } from "./gallery-card/gallery-card.component";
 import { DetailCardComponent } from "./detail-card/detail-card.component";
 import { ChatComponent } from "./chat/chat.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { NavbarComponent } from "./navbar/navbar.component";
+import { FooterComponent } from "./footer/footer.component";
+import { SidemenuComponent } from "./sidemenu/sidemenu.component";
 
 @NgModule({
     imports: [
@@ -19,12 +22,18 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
         GalleryCardComponent,
         DetailCardComponent,
         ChatComponent,
+        NavbarComponent,
+        FooterComponent,
+        SidemenuComponent
     ],
     exports: [
         HomeCardComponent,
         GalleryCardComponent,
         DetailCardComponent,
         ChatComponent,
+        NavbarComponent,
+        SidemenuComponent,
+        FooterComponent
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA

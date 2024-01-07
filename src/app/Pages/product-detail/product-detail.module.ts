@@ -8,7 +8,6 @@ import { ProductDetailPageRoutingModule } from './product-detail-routing.module'
 
 import { ProductDetailPage } from './product-detail.page';
 import { ComponentsModule } from 'src/app/Components/Components.module';
-import { SharedModules } from 'src/app/Shared/Shared.module';
 
 @NgModule({
   imports: [
@@ -17,7 +16,6 @@ import { SharedModules } from 'src/app/Shared/Shared.module';
     IonicModule,
     ProductDetailPageRoutingModule,
     ComponentsModule,
-    SharedModules
   ],
   declarations: [ProductDetailPage]
 })
