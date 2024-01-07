@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ChatComponent } from 'src/app/Components/chat/chat.component';
 
 @Component({
   selector: 'app-product-detail',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailPage implements OnInit {
 
-  constructor() { }
+  constructor(private modalController: ModalController) { }
 
   ngOnInit() {
+  }
+
+  async AbrirModal(){
+    const modal = await this.modalController.create({
+      component: ChatComponent
+    });
+    await modal.present();
   }
 
 }

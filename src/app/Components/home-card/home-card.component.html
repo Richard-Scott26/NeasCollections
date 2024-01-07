@@ -1,3 +1,63 @@
-<p>
-  home-card works!
-</p>
+<div class="container">
+  <div class="etiqueta_container">
+    <div class="etiqueta">
+      <div class="date_etiqueta">
+        <span>{{month}}</span>
+        <span class="day">{{day}}</span>
+      </div>
+      <div class="reaction_etiqueta">
+  
+        <label>
+          <img src="../../../assets/icon/chat.png" class="icons">
+          <span>{{chats}}</span>
+        </label>
+  
+        <label>
+          <img src="../../../assets/icon/favorites.png" class="icons">
+          <span>{{favorites}}</span>
+        </label>
+  
+        <label>
+          <img src="../../../assets/icon/instagram.png" class="icons">
+          <span>{{instagram}}</span>
+        </label>
+  
+        <label>
+          <img src="../../../assets/icon/twitter.png" class="icons">
+          <span>{{twitter}}</span>
+        </label>
+  
+        <label>
+          <img src="../../../assets/icon/facebook.png" class="icons">
+          <span>{{facebook}}</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="post_container">
+
+    <h1 class="titlePost">{{title}}</h1>
+    <div class="intro_post">
+      <p class="intro">{{intro}}</p>
+    </div>
+    <div class="image_post">
+      <img 
+      [src]="img" 
+      class="image">
+    </div>
+    <div class="description_post">
+      <p class="description">{{description}}</p>
+    </div>
+    <div class="button_post">
+      <ion-button
+        (click)="onClick()"
+        expand="block" 
+        fill="clear" 
+        shape="round">
+        Leer mas...
+      </ion-button>
+    </div>
+  </div>
+
+</div>

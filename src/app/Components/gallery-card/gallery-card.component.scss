@@ -1,0 +1,7 @@
+.item{
+    width: min(100% - 5px, 200px);
+    height: min(100% - 5px, 250px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

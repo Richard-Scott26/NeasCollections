@@ -1,3 +1,50 @@
-<ion-content [fullscreen]="true">
-  <app-sidemenu></app-sidemenu>
-</ion-content>
+<div class="container">
+  <div class="sidemenu_container">
+    <app-sidemenu></app-sidemenu>
+  </div>
+
+  <div class="content_container">
+
+    <div class="content">
+      <app-navbar class="navbar"></app-navbar>
+
+      <div class="cards_container">
+        <app-home-card class="first"
+          title="Fotos para decoraciones"
+          intro="Diferentes tamaños y diseños de bordes"
+          img="../../../assets/Images/Carousel/img1.jpg"
+          month="Jan" day="4"
+          chats="100" instagram="54" facebook="86"
+          twitter="33" favorites="212"
+          description="Imagenes seleccionadas por el cliente en las cuales se define 
+            un diseño y estilo, cada personalizacion tiene un costo diferente segun 
+            la complejidad"
+        ></app-home-card>
+
+        <app-home-card
+          title="Cuadro para retrato pequeno"
+          intro="colores dorado, blanco, negro y cafe bosque"
+          img="../../../assets/Images/Carousel/img2.jpg"
+          month="Jan" day="3"
+          chats="126" instagram="48" facebook="79"
+          twitter="26" favorites="155"
+          description="Es una cuadro donde perfectamente puede caber cierta cantidad de 
+            fotos y texto segun sea definido por el cliente ademas de la personalizacion 
+            que es variada. tiene un tamano de 5x7 pulgadas"
+        ></app-home-card>
+      </div>
+
+      <footer>
+        <app-footer></app-footer>
+      </footer>
+    </div>
+    
+  </div>
+
+  <ion-fab slot="fixed" vertical="top" horizontal="end">
+    <ion-fab-button (click)="AbrirModal()" id="open-modal" expand="block">
+      <ion-icon name="chatbubbles-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</div>
